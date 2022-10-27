@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico"
+        rel="shortcut icon" />
+  <link rel="stylesheet"
+        href="../momentum/css/owfont-regular.css" />
+  <link rel="stylesheet"
+        href="../momentum/css/style.css" />
+
+  <title>momentum</title>
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list">
+      </ul>
+    </div>
+
+
+
+    <div class="weather">
+      <input type="text"
+             class="city"
+             placeholder="[Enter city]" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+
+
+
+
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text"
+             class="name"
+             placeholder="[Enter name]" />
+    </div>
+
+  </main>
+  <div class="modal">
+    <button class="popupBtn"
+            id="#">SETTING</button>
+
+    <div class="myPopup">
+      <div class="closePopup">&times;</div>
+      <div class="popup__content">
+        <div class="popup__lang">
+          <select name="lang"
+                  id="selectLang"
+                  class="selectLang">
+            <option value="ru">ru</option>
+            <option value="en">en</option>
+
+
+          </select>
+        </div>
+
+        <div class="popup__photo">
+          <select name="photo"
+                  id="photoSource"
+                  class="photoSource">
+            <option selected
+                    disabled>Photo Source</option>
+
+            <option value="collection"
+                    class="photo">Collection</option>
+            <option value="unsplash"
+                    class="photo">Unsplash API</option>
+            <option value="flickr"
+                    class="photo">Flickr API</option>
+          </select>
+        </div>
+
+        <div class="popup__hidden">
+          <select name="hiddenBloc"
+                  id="hiddenBloc"
+                  class="hiddenBloc">
+            <option selected
+                    disabled>hidden Block</option>
+
+            <option value="time_hidden"
+                    class="hidden">Time</option>
+            <option value="date_hidden"
+                    class="hidden">Date</option>
+            <option value="greeting_hidden"
+                    class="hidden">Greeting</option>
+            <option value="quote_hidden"
+                    class="hidden">Quote</option>
+            <option value="player_hidden"
+                    class="hidden">Player</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+
+    <div class="footer__git">
+      <div class="git">
+        <a target="_blank"
+           class="footer__git-link"
+           href="https://github.com/Tsvetinskaya-L">
+          <img class="footer__link-img"
+               src="/momentum/assets/svg/free-icon-github-logo-25231.svg"
+               alt="GitHub" />
+          <span>Tsvetinskaya Lidiya</span>
+        </a>
+      </div>
+      <div class="footer__date">2021</div>
+      <div class="footer__logo">
+        <a target="_blank"
+           class="footer__logo-link"
+           href="https://rs.school/js/">
+          <img class="logo-img"
+               src="https://rs.school/images/rs_school_js.svg"
+               alt="rs-school" />
+        </a>
+      </div>
+    </div>
+
+    <div class="todo-form">
+      <form>
+        <span>Todo-list</span>
+        <input type="text"
+               class="todo-input">
+        <button class="add-todo-button">
+          <i class="fas fa-plus-square"></i>
+        </button>
+      </form>
+
+      <div class="todo-container">
+        <ul class="todo-list">
+
+        </ul>
+      </div>
+    </div>
+
+
+  </footer>
+
+
+
+
+
+
+  <script type="module"
+          src="js/script.js"
+          defer></script>
+
+</body>
+
+</html>
